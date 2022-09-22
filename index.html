@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center; background-color: rgb(210, 240, 240);">
+    <h1 style="color: red;">Máy tính thông minh</h1>
+    Nhập tuổi của bạn: <input type="text" id="myAge" value="" style="margin-top: 15px ;"><br>
+    Nhập chiêu cao của bạn: <input type="text" id="myHeight" value="" style="margin-top: 15px ;"><br>
+    <button onclick="myFunction()" style="margin-top:15px">Tính toán</button>
+    <p id="demo" style="color : rgb(0, 0, 0); background-color: aquamarine;"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myAge").value
+            var y = document.getElementById("myHeight").value;
+            document.getElementById("demo").innerHTML = "Tuổi của bạn là " + x + " và chiều cao của bạn là " + y + " cm";
+        }
+    </script>
+
+</body>
+
+</html>
